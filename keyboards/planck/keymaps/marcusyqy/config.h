@@ -61,7 +61,7 @@
 #define MOUSEKEY_DELAY 8	//Delay between pressing a movement key and cursor movement
 #define MOUSEKEY_INTERVAL 16	//Time between cursor movements in milliseconds
 #define MOUSEKEY_MOVE_DELTA	5	//Step size for accelerating from initial to base speed
-#define MOUSEKEY_INITIAL_SPEED 10	//Initial speed of the cursor in pixel per second
+#define MOUSEKEY_INITIAL_SPEED 1	//Initial speed of the cursor in pixel per second
 #define MOUSEKEY_BASE_SPEED	200	//Maximum cursor speed at which acceleration stops
 #define MOUSEKEY_DECELERATED_SPEED 20	//Decelerated cursor speed
 #define MOUSEKEY_ACCELERATED_SPEED 200	//Accelerated cursor speed
