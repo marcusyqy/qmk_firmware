@@ -60,7 +60,7 @@
 #define MK_KINETIC_SPEED	//Enable kinetic mode
 #define MOUSEKEY_DELAY 8	//Delay between pressing a movement key and cursor movement
 #define MOUSEKEY_INTERVAL 16	//Time between cursor movements in milliseconds
-#define MOUSEKEY_MOVE_DELTA	5	//Step size for accelerating from initial to base speed
+#define MOUSEKEY_MOVE_DELTA	4	//Step size for accelerating from initial to base speed
 #define MOUSEKEY_INITIAL_SPEED 1	//Initial speed of the cursor in pixel per second
 #define MOUSEKEY_BASE_SPEED	200	//Maximum cursor speed at which acceleration stops
 #define MOUSEKEY_DECELERATED_SPEED 20	//Decelerated cursor speed
@@ -80,3 +80,4 @@
 // #define MK_KINETIC_WHEEL_MAXS 2
 // #define MK_KINETIC_WHEEL_ACCN 6
 
+#define USB_POLLING_INTERVAL_MS 1

@@ -62,3 +62,5 @@
 #define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 48	//Accelerated wheel movements
 #define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 8	//Decelerated wheel movements
 #define MOUSEKEY_WHEEL_DELAY 0
+
+#define USB_POLLING_INTERVAL_MS 1
