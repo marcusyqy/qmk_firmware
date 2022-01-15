@@ -23,14 +23,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MASTER_RIGHT
 
 //#define EE_HANDS
-#define MK_VARIANT MK_TYPE_KINETIC
-
-#define MK_KINETIC_MOUSE_MAXS 125
-#define MK_KINETIC_MOUSE_ACCN 14
-#define MK_KINETIC_MOUSE_FRIC 12
-#define MK_KINETIC_MOUSE_DRAG 14
-
-#define MK_KINETIC_WHEEL_MAXS 2
-#define MK_KINETIC_WHEEL_ACCN 8
+#define MK_KINETIC_SPEED	//Enable kinetic mode
+#define MOUSEKEY_MOVE_DELTA	4	//Step size for accelerating from initial to base speed
+#define MOUSEKEY_INITIAL_SPEED 1	//Initial speed of the cursor in pixel per second
+#define MOUSEKEY_BASE_SPEED	200	//Maximum cursor speed at which acceleration stops
+#define MOUSEKEY_DECELERATED_SPEED 20	//Decelerated cursor speed
+#define MOUSEKEY_ACCELERATED_SPEED 200	//Accelerated cursor speed
+#define MOUSEKEY_WHEEL_INITIAL_MOVEMENTS 16	//Initial number of movements of the mouse wheel
+#define MOUSEKEY_WHEEL_BASE_MOVEMENTS 32	//Maximum number of movements at which acceleration stops
+#define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 48	//Accelerated wheel movements
+#define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 8	//Decelerated wheel movements
+#define MOUSEKEY_WHEEL_DELAY 0
 
 #define USB_POLLING_INTERVAL_MS 1
