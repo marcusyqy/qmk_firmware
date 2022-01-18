@@ -21,8 +21,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_LSFT, KC_Z  , KC_X  , KC_C , KC_V  , KC_B  ,                         KC_N  , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH, KC_RSFT,
                       KC_GRV, KC_DEL,                                                       KC_LBRC,KC_RBRC,
                                       KC_BSPC, LOWER,                        KC_ENT, KC_SPC,
-                                      KC_LALT, KC_LCTL,                      KC_RCTL,  RALT_T(KC_PSCR),
-                                      RAISE, KC_LGUI,                         KC_RGUI, RAISE
+                                      KC_LALT, KC_LCTL,                      KC_LCTL,  RALT_T(KC_PSCR),
+                                      RAISE, KC_LGUI,                         KC_LGUI, RAISE
+                                      // set it to left gui and left ctrl so that
+                                      // we can use the virtual desktop functions
+                                      // provided by windows
   ),
   [_LOWER] = LAYOUT_5x6(
 
@@ -37,10 +40,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   ),
   [_RAISE] = LAYOUT_5x6(
-       _______, KC_F1,   KC_F2,   KC_F3,   KC_F4, _______,                   _______ ,_______, _______, _______, _______, _______,
-       _______, KC_F5,   KC_F6,   KC_F7,   KC_F8, _______,                   _______,_______, KC_MS_U, _______, KC_WH_U, _______,
-       _______, KC_F9,   KC_F10,  KC_F11,  KC_F12,_______,                    _______,KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D,_______,
-       _______,_______,_______,_______,_______,_______,                       _______,KC_VOLD, KC_VOLU,KC_MUTE,_______,_______,
+       _______, _______, _______, _______, _______, _______,                 _______ ,_______, _______, _______, _______, _______,
+       _______, KC_F1,   KC_F2,   KC_F3,   KC_F4, _______,                   _______,_______, KC_MS_U, _______, KC_WH_U, _______,
+       _______, KC_F5,   KC_F6,   KC_F7,   KC_F8, _______,                   _______,KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D,_______,
+       _______, KC_F9,   KC_F10,  KC_F11,  KC_F12,_______,                   _______,KC_VOLD, KC_VOLU,KC_MUTE,_______,_______,
                        RESET,_______,                                                         _______ ,_______,
                                                _______,_______,            KC_BTN1, KC_BTN2,
                                                _______,_______,            KC_BTN3,_______,
